@@ -1,6 +1,7 @@
 ## cert-expiry-check
 
 [![CircleCI](https://circleci.com/gh/Joe8Bit/cert-expiry-check.svg?style=svg)](https://circleci.com/gh/Joe8Bit/cert-expiry-check)
+[![npm version](https://badge.fury.io/js/cert-expiry-check.svg)](https://badge.fury.io/js/cert-expiry-check)
 
 A module to check the expiry of SSL/TLS certs.
 
