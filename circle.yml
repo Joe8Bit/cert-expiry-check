@@ -3,7 +3,6 @@ machine:
     version: 6.2.0
 test:
   pre:
-    - npm install -g ava
     - npm install -g nyc
     - npm install -g eslint
     - npm install -g babel-eslint

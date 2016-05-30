@@ -10,7 +10,11 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "ava": "^0.15.1",
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.11.0",
     "moment": "^2.13.0",
+    "nyc": "^6.4.4",
     "sinon": "^1.17.4"
   }
 }
