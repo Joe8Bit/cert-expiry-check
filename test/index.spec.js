@@ -134,7 +134,7 @@ test('should allow configs to be overridden per host', async t => {
     t.is(result[1].host.hostname, 'www.facebook.com');
     t.is(result[1].host.port, 443);
     t.is(result[1].host.alertWindowDays, 30);
-    t.is(result[1].host.headers['User-Agent'], 'SSL Certificate Expiry Checker 1.0.0');
+    t.is(result[1].host.headers['User-Agent'], `SSL Certificate Expiry Checker ${require('../package').version}`);
 
   } catch(e) {
     t.fail();
