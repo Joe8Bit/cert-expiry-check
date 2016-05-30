@@ -1,0 +1,16 @@
+{
+  "name": "cert-expiry-check",
+  "version": "0.1.0",
+  "description": "A module to check the expiry of HTTPS certificates",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava && eslint index.js test/**/*.js"
+  },
+  "author": "Joe Pettersson <joe8bit@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "moment": "^2.13.0",
+    "sinon": "^1.17.4"
+  }
+}
