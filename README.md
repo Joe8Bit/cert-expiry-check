@@ -21,6 +21,41 @@ checker.checkHosts([{
 });
 ```
 
+Gives the following result:
+
+```json
+[{
+  "host":{
+    "hostname":"www.google.com",
+    "port":443,
+    "alertWindowDays":30,
+    "headers":{
+      "User-Agent":"SSL Certificate Expiry Checker 0.1.0"
+    },
+    "method":"GET"
+  },
+  "details":{
+    "subject":{
+      "org":"Google Inc",
+      "commonName":"www.google.com",
+      "altName":"DNS:www.google.com"
+    },
+    "issuer":{
+      "org":"Google Inc",
+      "commonName":"Google Internet Authoritym G2"
+    }
+  },
+  "validFrom":"2016-05-18T10:59:02.000Z",
+  "validTo":"2016-08-10T10:46:00.000Z",
+  "expiry":{
+    "days":72,
+    "milliseconds":6198331472,
+    "isExpired":false,
+    "isInAlertWindow":false
+  }
+}]
+```
+
 There are two types of configurations that can be performed, first the 'global' defaults used for all checked domains:
 
 ```javascript
