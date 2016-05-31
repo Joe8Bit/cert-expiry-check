@@ -27,12 +27,6 @@ test('should return the correct expiry information for a single entry', async t 
       hostname: 'www.google.com'
     }]);
 
-    t.is(result[0].details.subject.commonName, 'Common name');
-    t.is(result[0].details.subject.altName, 'Alt name');
-    t.is(result[0].details.subject.org, 'Org name');
-    t.is(result[0].details.issuer.commonName, 'Issuer common name');
-    t.is(result[0].details.issuer.org, 'Issuer org name');
-
     let validFrom = moment(result[0].validFrom);
     let validFromCompare = moment().subtract(90, 'days');
     let validTo = moment(result[0].validTo);

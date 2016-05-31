@@ -104,17 +104,6 @@ class CertExpiryCheck {
   hydrateResultObject(raw, host) {
     return {
       host,
-      details: {
-        subject: {
-          org: raw.subject.O,
-          commonName: raw.subject.CN,
-          altName: raw.subjectaltname
-        },
-        issuer: {
-          org: raw.issuer.O,
-          commonName: raw.issuer.CN
-        }
-      },
       validFrom: this.parseDate(raw.valid_from),
       validTo: this.parseDate(raw.valid_to),
       expiry: this.getExpiry(this.parseDate(raw.valid_to), host)
